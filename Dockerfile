@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Peter Reuterås <peter@reuteras.net>
+MAINTAINER PR <code@reuteras.se>                                                                                                                                                                                                                                                                                                                                            
 
 ## Install tools and libraries
 RUN apt-get update -yqq && \
