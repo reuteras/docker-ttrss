@@ -1,5 +1,6 @@
 FROM debian:stretch
-MAINTAINER PR <code@ongoing.today>                                                                                                                                                                                                                                                                                                                                            
+MAINTAINER PR <code@ongoing.today>
+
 ## Install tools and libraries
 RUN apt-get update -yqq && \
     apt-get install -yqq --no-install-recommends \

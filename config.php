@@ -38,11 +38,11 @@
 
 	define('SIMPLE_UPDATE_MODE', false);
 	// Enables fallback update mode where tt-rss tries to update feeds in
-	// background while tt-rss is open in your browser. 
-	// If you don't have a lot of feeds and don't want to or can't run 
-	// background processes while not running tt-rss, this method is generally 
+	// background while tt-rss is open in your browser.
+	// If you don't have a lot of feeds and don't want to or can't run
+	// background processes while not running tt-rss, this method is generally
 	// viable to keep your feeds up to date.
-	// Still, there are more robust (and recommended) updating methods 
+	// Still, there are more robust (and recommended) updating methods
 	// available, you can read about them here: http://tt-rss.org/wiki/UpdatingFeeds
 
 	// *****************************
@@ -50,10 +50,10 @@
 	// *****************************
 
 	define('PHP_EXECUTABLE', '/usr/bin/php');
-	// Path to PHP *COMMAND LINE* executable, used for various command-line tt-rss 
-	// programs and update daemon. Do not try to use CGI binary here, it won't work. 
-	// If you see HTTP headers being displayed while running tt-rss scripts, 
-	// then most probably you are using the CGI binary. If you are unsure what to 
+	// Path to PHP *COMMAND LINE* executable, used for various command-line tt-rss
+	// programs and update daemon. Do not try to use CGI binary here, it won't work.
+	// If you see HTTP headers being displayed while running tt-rss scripts,
+	// then most probably you are using the CGI binary. If you are unsure what to
 	// put in here, ask your hosting provider.
 
 	define('LOCK_DIRECTORY', 'lock');
@@ -91,7 +91,7 @@
 
 	define('FORCE_ARTICLE_PURGE', 0);
 	// When this option is not 0, users ability to control feed purging
-	// intervals is disabled and all articles (which are not starred) 
+	// intervals is disabled and all articles (which are not starred)
 	// older than this amount of days are purged.
 
 	// *** PubSubHubbub settings ***
@@ -138,7 +138,7 @@
 	// **********************************
 	
 	define('SESSION_COOKIE_LIFETIME', 86400);
-	// Default lifetime of a session (e.g. login) cookie. In seconds, 
+	// Default lifetime of a session (e.g. login) cookie. In seconds,
 	// 0 means cookie will be deleted when browser closes.
 
 	// *********************************
@@ -154,7 +154,7 @@
 	// Subject line for email digests
 
 	define('SMTP_SERVER', '');
-	// Hostname:port combination to send outgoing mail (i.e. localhost:25). 
+	// Hostname:port combination to send outgoing mail (i.e. localhost:25).
 	// Blank - use system MTA.
 	
 	define('SMTP_LOGIN', '');
@@ -172,7 +172,7 @@
 
 	define('CHECK_FOR_UPDATES', true);
 	// Check for updates automatically if running Git version
- 
+
 	define('ENABLE_GZIP_OUTPUT', false);
 	// Selectively gzip output to improve wire performance. This requires
 	// PHP Zlib extension on the server.
@@ -192,7 +192,7 @@
 	define('LOG_DESTINATION', 'sql');
 	// Log destination to use. Possible values: sql (uses internal logging
 	// you can read in Preferences -> System), syslog - logs to system log.
-	// Setting this to blank uses PHP logging (usually to http server 
+	// Setting this to blank uses PHP logging (usually to http server
 	// error.log).
 
 	define('CONFIG_VERSION', 26);
