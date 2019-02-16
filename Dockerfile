@@ -1,19 +1,18 @@
-FROM debian:jessie
-MAINTAINER PR <code@reuteras.se>                                                                                                                                                                                                                                                                                                                                            
-
+FROM debian:stretch
+MAINTAINER PR <code@ongoing.today>                                                                                                                                                                                                                                                                                                                                            
 ## Install tools and libraries
 RUN apt-get update -yqq && \
     apt-get install -yqq --no-install-recommends \
         apache2 \
         ca-certificates \
         git \
-        php5 \
-        libapache2-mod-php5 \
+        php \
+        libapache2-mod-php \
         libxml2-utils \
-        php5-curl \
-        php5-gd \
-        php5-pgsql \
-        php5-mcrypt \
+        php-curl \
+        php-gd \
+        php-pgsql \
+        php-mcrypt \
         postgresql-client \
         supervisor \
         tidy && \
