@@ -10,10 +10,15 @@ RUN apt-get update -yqq && \
         php \
         libapache2-mod-php \
         libxml2-utils \
+        php-cli \
         php-curl \
         php-gd \
+        php-json \
         php-pgsql \
+        php-mbstring \
         php-mcrypt \
+        php-opcache \
+        php-xml \
         postgresql-client \
         supervisor \
         tidy && \
