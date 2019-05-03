@@ -13,6 +13,7 @@ RUN apt-get update -yqq && \
         php-cli \
         php-curl \
         php-gd \
+        php-intl \
         php-json \
         php-pgsql \
         php-mbstring \
