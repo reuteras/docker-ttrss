@@ -1,8 +1,10 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 MAINTAINER PR <code@ongoing.today>
 
 ## Install tools and libraries
 RUN apt-get update -yqq && \
+    mkdir -p /usr/share/man/man1 && \
+    mkdir -p /usr/share/man/man7 && \
     apt-get install -yqq --no-install-recommends \
         apache2 \
         ca-certificates \
@@ -36,7 +38,8 @@ RUN apt-get update -yqq && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/* && \
-    rm -rf /usr/share/doc /usr/local/share/man /var/cache/debconf/*-old
+    rm -rf /usr/share/doc /usr/local/share/man /var/cache/debconf/*-old && \
+    rm -rf /usr/share/man
 
 # Copy files to docker
 COPY ttrss.conf /etc/apache2/sites-available/ttrss.conf
