@@ -26,7 +26,7 @@ RUN apt-get update -yqq && \
         supervisor \
         tidy && \
 # Checkout TT-RSS and plugins
-    git clone https://tt-rss.org/gitlab/fox/tt-rss.git /var/www/html/ttrss && \
+    git clone https://git.tt-rss.org/fox/tt-rss.git /var/www/html/ttrss && \
     git clone https://github.com/reuteras/ttrss_plugin-af_feedmod.git /var/www/html/ttrss/plugins.local/af_feedmod && \
     git clone https://github.com/fastcat/tt-rss-ff-xmllint /tmp/ff_xmllint && \
     mv /tmp/ff_xmllint/ff_xmllint /var/www/html/ttrss/plugins.local && \
