@@ -2,10 +2,10 @@ FROM debian:stretch-slim
 MAINTAINER PR <code@ongoing.today>
 
 ## Install tools and libraries
-RUN apt-get update -yqq && \
+RUN apt update -yqq && \
     mkdir -p /usr/share/man/man1 && \
     mkdir -p /usr/share/man/man7 && \
-    apt-get install -yqq --no-install-recommends \
+    apt install -yqq --no-install-recommends \
         apache2 \
         ca-certificates \
         git \
@@ -33,9 +33,9 @@ RUN apt-get update -yqq && \
 # Clean up
     rm -rf /var/www/html/ttrss/.git && \
     rm -rf /var/www/html/ttrss/plugins.local/af_feedmod/.git && \
-    apt-get remove -y git && \
-    apt-get autoremove -y && \
-    apt-get clean && \
+    apt remove -y git && \
+    apt autoremove -y && \
+    apt clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/* && \
     rm -rf /usr/share/doc /usr/local/share/man /var/cache/debconf/*-old && \
