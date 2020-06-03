@@ -25,6 +25,10 @@ RUN apt update -yqq && \
         postgresql-client \
         supervisor \
         tidy && \
+# Fix the Breakage from the AddTrust External CA Root Expiration
+# https://www.agwa.name/blog/post/fixing_the_addtrust_root_expiration
+    sed -i -E 's#^mozilla/AddTrust_External_Root.crt#\!mozilla/AddTrust_External_Root.crt#' /etc/ca-certificates.conf && \
+    update-ca-certificates && \
 # Checkout TT-RSS and plugins
     git clone https://git.tt-rss.org/fox/tt-rss.git /var/www/html/ttrss && \
     git clone https://github.com/reuteras/ttrss_plugin-af_feedmod.git /var/www/html/ttrss/plugins.local/af_feedmod && \
