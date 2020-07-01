@@ -1,5 +1,5 @@
 FROM debian:stretch-slim
-MAINTAINER PR <code@ongoing.today>
+LABEL maintainer="Coding <code@ongoing.today>"
 
 ## Install tools and libraries
 RUN apt update -yqq && \
