@@ -1,6 +1,6 @@
 # docker-ttrss
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/reuteras/docker-ttrss.svg?style=plastic)](https://hub.docker.com/r/reuteras/docker-ttrss/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/reuteras/docker-ttrss.svg?style=plastic)](https://hub.docker.com/r/reuteras/docker-ttrss/) ![Linter](https://github.com/reuteras/docker-ttrss/workflows/Linter/badge.svg)
 
 
 I'm moving more of the services I use to Docker. This my Docker container for [tt-rss](https://tt-rss.org/). This container only supports Postgresql.
