@@ -1,4 +1,4 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 LABEL maintainer="Coding <code@ongoing.today>"
 
 ## Install tools and libraries
@@ -11,7 +11,6 @@ RUN apt update -yqq && \
         git \
         php \
         libapache2-mod-php \
-        libxml2-utils \
         php-cli \
         php-curl \
         php-gd \
@@ -19,12 +18,10 @@ RUN apt update -yqq && \
         php-json \
         php-pgsql \
         php-mbstring \
-        php-mcrypt \
         php-opcache \
         php-xml \
         postgresql-client \
-        supervisor \
-        tidy && \
+        supervisor && \
 # Fix the Breakage from the AddTrust External CA Root Expiration
 # https://www.agwa.name/blog/post/fixing_the_addtrust_root_expiration
     sed -i -E 's#^mozilla/AddTrust_External_Root.crt#\!mozilla/AddTrust_External_Root.crt#' /etc/ca-certificates.conf && \
