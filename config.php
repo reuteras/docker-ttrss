@@ -200,4 +200,5 @@
     // Expected config version. Please update this option in config.php
     // if necessary (after migrating all new options from this file).
 
+    putenv('TTRSS_SELF_URL_PATH=http://localhost:8000/');
     // vim:ft=php
