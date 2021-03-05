@@ -19,7 +19,7 @@
     // *** Basic settings (important!) ***
     // ***********************************
 
-    define('SELF_URL_PATH', 'http://localhost:8000/');
+    define('SELF_URL_PATH', 'http://localhost:8000');
     // Full URL of your tt-rss installation. This should be set to the
     // location of tt-rss directory, e.g. http://example.org/tt-rss/
     // You need to set this option correctly otherwise several features
@@ -200,5 +200,4 @@
     // Expected config version. Please update this option in config.php
     // if necessary (after migrating all new options from this file).
 
-    putenv('TTRSS_SELF_URL_PATH=http://localhost:8000/');
     // vim:ft=php
