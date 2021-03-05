@@ -20,6 +20,7 @@
     // ***********************************
 
     define('SELF_URL_PATH', 'http://localhost:8000');
+    define('_SKIP_SELF_URL_PATH_CHECKS', true);
     // Full URL of your tt-rss installation. This should be set to the
     // location of tt-rss directory, e.g. http://example.org/tt-rss/
     // You need to set this option correctly otherwise several features
