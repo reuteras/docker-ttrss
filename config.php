@@ -31,7 +31,7 @@
     // is not used. Requires mcrypt functions.
     // Warning: changing this key will make your stored feed passwords impossible
     // to decrypt.
-    
+
     define('SINGLE_USER_MODE', false);
     // Operate in single user mode, disables all functionality related to
     // multiple users and authentication. Enabling this assumes you have
@@ -137,7 +137,7 @@
     // **********************************
     // *** Cookies and login sessions ***
     // **********************************
-    
+
     define('SESSION_COOKIE_LIFETIME', 86400);
     // Default lifetime of a session (e.g. login) cookie. In seconds,
     // 0 means cookie will be deleted when browser closes.
@@ -157,7 +157,7 @@
     define('SMTP_SERVER', '');
     // Hostname:port combination to send outgoing mail (i.e. localhost:25).
     // Blank - use system MTA.
-    
+
     define('SMTP_LOGIN', '');
     define('SMTP_PASSWORD', '');
     // These two options enable SMTP authentication when sending
@@ -166,7 +166,7 @@
     define('SMTP_SECURE', '');
     // Used to select a secure SMTP connection. Allowed values: ssl, tls,
     // or empty.
-    
+
     // ***************************************
     // *** Other settings (less important) ***
     // ***************************************
@@ -189,7 +189,7 @@
     // disable plugins specified in this list.
     // Disabling auth_internal in this list would automatically disable
     // reset password link on the login form.
-    
+
     define('LOG_DESTINATION', 'sql');
     // Log destination to use. Possible values: sql (uses internal logging
     // you can read in Preferences -> System), syslog - logs to system log.
