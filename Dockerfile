@@ -28,6 +28,8 @@ RUN apt update -yqq && \
     update-ca-certificates && \
 # Checkout TT-RSS and plugins
     git clone https://git.tt-rss.org/fox/tt-rss.git /var/www/html/ttrss && \
+# Temporary ugly fix
+    sed -i "s/self::get_self_url() != /self::get_self_url() ==/" /var/www/html/ttrss/classes/config.php && \
 # Clean up
     rm -rf /var/www/html/ttrss/.git && \
     apt remove -y git && \
