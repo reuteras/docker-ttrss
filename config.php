@@ -1,18 +1,18 @@
 <?php
-	/*
-		This file can be used to customize global defaults if environment method is not available (i.e. no Docker).
 
-		Use the following syntax to override defaults (options are declared in classes/config.php, prefixed by TTRSS_):
+    /*
+        This file can be used to customize global defaults if environment method is not available (i.e. no Docker).
 
-		putenv('TTRSS_DB_HOST=myserver');
-		putenv('TTRSS_SELF_URL_PATH=http://example.com/tt-rss');
+        Use the following syntax to override defaults (options are declared in classes/config.php, prefixed by TTRSS_):
 
-		Plugin-required constants also go here, using define():
+        putenv('TTRSS_DB_HOST=myserver');
+        putenv('TTRSS_SELF_URL_PATH=http://example.com/tt-rss');
 
-		define('LEGACY_CONSTANT', 'value');
+        Plugin-required constants also go here, using define():
 
-		etc.
+        define('LEGACY_CONSTANT', 'value');
 
-		See this page for more information: https://tt-rss.org/wiki/GlobalConfig
-	*/
+        etc.
 
+        See this page for more information: https://tt-rss.org/wiki/GlobalConfig
+    */
